@@ -22,6 +22,8 @@ describe "Not having any errors and being all green" do
         load './lib/a_type_error.rb'
       }.to_not raise_error
     end
+    
+    validates_presence_of
   end
 
   context 'ZeroDivisionError' do
